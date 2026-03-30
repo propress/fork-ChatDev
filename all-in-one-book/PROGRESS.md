@@ -14,7 +14,7 @@
 | 7 | 其他节点类型与函数体系 | ch07-other-nodes-and-functions.md | Human / Subgraph / Python / Literal / LoopCounter / LoopTimer 节点、FunctionManager 与 FunctionCatalog | | ✅ |
 | 8 | 服务层：FastAPI 后端与实时通信 | ch08-server-layer.md | FastAPI 路由体系、WebSocket 实时推送、SSE 流式输出、批量执行、会话管理 | | ✅ |
 | 9 | 项目演进史 | ch09-evolution.md | 从 ChatDev 1.0 到 2.0 的演进脉络、关键转折点、架构变迁 | commit 历史分析 | ✅ |
-| 10 | 端到端追踪：三个典型场景 | ch10-end-to-end.md | 场景一：简单记忆写作流水线 / 场景二：带循环的代码开发流 / 场景三：深度研究多阶段流 | 串联全书 | ⏳ |
+| 10 | 端到端追踪：三个典型场景 | ch10-end-to-end.md | 场景一：简单记忆写作流水线 / 场景二：带循环的代码开发流 / 场景三：深度研究多阶段流 | 串联全书 | ✅ |
 
 ## 章节规划说明
 
@@ -77,15 +77,13 @@
 
 ## 下次续写指引
 ### 从哪里继续
-从第 0 章（序言）开始写作。
+全书 11 章（序言 + 10 章）已全部完成。
 
 ### 交接备忘
-- 项目共 163 个 commits，从 2026-01-07 到 2026-03-22
-- 这是一个 LLM 项目，需要关注 prompt 分析
-- 项目从 ChatDev 1.0（专做软件开发的多 Agent 系统）演进到 2.0（通用零代码多 Agent 编排平台）
-- 核心 prompt 在 agent_executor.py 中构造，反思 prompt 在 self_reflection.py 中
-- 向量检索使用 FAISS，混合评分（0.7 向量相似度 + 0.3 语义相似度）
+- 全书共 11 章，约 75,000 字
+- 涵盖：架构全景、数据流、图引擎、循环/分支、Agent 节点（含 prompt 分析）、记忆系统、思考/技能系统、其他节点、服务层、演进史、端到端追踪
+- 两处同类对比：第 2 章（LangGraph/CrewAI 编排方式）、第 5 章（AutoGen/LangChain 记忆机制）
+- 两处 prompt 分析：第 4 章（Agent 系统提示/记忆注入）、第 6 章（反思 prompt/技能声明）
 
 ### 待验证项
-- [ ] 前端 Vue Flow 可视化编辑器的详细交互流程（如需写前端章节时验证）
-- [ ] MCP 工具的具体集成方式（如需深入工具章节时验证）
+- 全部已完成，无待验证项
