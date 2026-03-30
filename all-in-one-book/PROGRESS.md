@@ -5,7 +5,7 @@
 | # | 章节标题 | 文件名 | 核心覆盖 | 特殊内容 | 状态 |
 |---|---------|--------|---------|---------|------|
 | 0 | 序言：全书地图 | ch00-preface.md | 项目定位 / 架构全景图 / 核心概念词典 / 代码库地图 / 一次典型交互极简全流程 | | ✅ |
-| 1 | 从 YAML 到运行：数据流全景 | ch01-data-flow.md | 一个 YAML 工作流从加载、校验、解析、构图、调度、执行到输出的完整数据流 | | ⏳ |
+| 1 | 从 YAML 到运行：数据流全景 | ch01-data-flow.md | 一个 YAML 工作流从加载、校验、解析、构图、调度、执行到输出的完整数据流 | | ✅ |
 | 2 | 图引擎核心：构建与调度 | ch02-graph-engine.md | GraphManager 构图、拓扑排序、DAG 分层执行策略 | 同类对比：LangGraph / CrewAI 的编排思路差异 | ⏳ |
 | 3 | 循环与分支：环检测与动态边 | ch03-cycles-and-edges.md | Tarjan 环检测、CycleManager、超级节点图、动态边 Map/Tree 模式、边条件与 Payload 处理 | | ⏳ |
 | 4 | Agent 节点：从 Prompt 到输出 | ch04-agent-node.md | AgentNodeExecutor 执行流、Prompt 构造、Provider 抽象、Tool Loop、重试机制 | prompt 分析（系统提示 / 记忆注入 / 反思提示） | ⏳ |
