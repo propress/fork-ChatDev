@@ -123,32 +123,49 @@
 
 ### 从哪里继续
 
-- **下一步**：开始写作序言（第 0 章）
-- **文件**：`all-in-one-book/ch00-preface.md`
+- **下一步**：开始写作第 2 章（图的构建：从配置到运行时）
+- **文件**：`all-in-one-book/ch02-graph-building.md`
+- **核心内容**：
+  - GraphConfig → GraphContext 的转换过程
+  - GraphManager.build_graph() 的详细流程
+  - 拓扑排序（TopologyBuilder）
+  - 循环检测（CycleManager + Tarjan SCC）
+  - 节点/边的运行时属性填充
 
 ### 交接备忘
 
-1. **核心资料已收集**：
-   - 架构探索报告（explore agent 输出）已保存在本次会话记录中
-   - Commit 历史已分析：共 163 个提交，从 2026-01-07 至 2026-03-22
-   - 项目定位清晰：ChatDev 2.0 (DevAll) 是零代码多智能体编排平台
+1. **已完成章节**：
+   - ✅ 序言（ch00）：全局画面、核心概念、代码库地图
+   - ✅ 第 1 章（ch01）：YAML 加载、变量替换、Schema 验证、配置解析
 
-2. **关键发现**：
-   - 这是一个 LLM 应用项目 → Prompt 分析规则适用
-   - 项目很新（3 个月历史）→ 演进史篇幅不会太长，一章足够
-   - Agent 系统复杂 → 需要多章深入讲解（第 6-10 章）
-   - 有明显的同类对比对象 → LangGraph（设计哲学差异大）
+2. **写作风格已建立**：
+   - 每章开头：衔接上一章 + 说明本章解决什么问题
+   - 核心结构：是什么 → 为什么 → 怎么做 → 数据流总结
+   - 每章结尾：引出下一章 + 质检报告
+   - 代码片段：不超过 5 行，只贴核心逻辑
+   - 流程图：必须基于源码确认，附带文字解释
 
-3. **写作重点**：
-   - 每个模块先讲"它是什么"再讲"里面有什么"
-   - Agent 相关章节必须分析 Prompt 构造逻辑
-   - 流程图必须基于源码确认，不能猜测
-   - 代码片段严格控制（不超过 5 行，Prompt 原文除外）
+3. **关键资料位置**：
+   - 架构探索报告：本次会话的 explore agent 输出（保存在第一次 Task tool 调用结果中）
+   - YAML 示例：`/home/runner/work/fork-ChatDev/fork-ChatDev/yaml_instance/`
+   - 核心代码目录：
+     - `workflow/graph_manager.py`：图构建
+     - `workflow/topology_builder.py`：拓扑排序
+     - `workflow/cycle_manager.py`：循环检测
+     - `entity/graph_config.py`：GraphConfig 定义
+     - `workflow/graph_context.py`：GraphContext 定义
 
-4. **时间管理**：
-   - 当前约 50 分钟限制
-   - 预计序言 + 第 1-3 章可以在一次会话中完成
-   - 质量优先，不够时间就优雅停止
+4. **第 2 章关键要点**：
+   - 强调 GraphConfig（不可变配置）vs GraphContext（可变运行时状态）的区别
+   - 拓扑排序要讲清楚"层"的概念（同一层的节点可以并行执行）
+   - Tarjan SCC 算法要解释它如何检测循环（不需要写完整算法，说清楚输入/输出/用途即可）
+   - 节点的 predecessors/successors 是如何填充的
+   - EdgeLink 与 EdgeConfig 的区别（EdgeLink 是运行时对象，增加了 triggered 状态）
+
+5. **时间管理**：
+   - 当前已用约 40 分钟（包括探索、规划、写作 2 章）
+   - 第 2-3 章预计可以在下次会话的前 30-40 分钟完成
+   - 继续保持质量优先，不赶进度
 
 ### 待验证项
 
