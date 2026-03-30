@@ -13,7 +13,7 @@
 | 6 | 思考系统与技能系统 | ch06-thinking-and-skills.md | ThinkingManager、SelfReflection prompt 分析、AgentSkills 激活机制 | prompt 分析（反思 prompt 模板） | ✅ |
 | 7 | 其他节点类型与函数体系 | ch07-other-nodes-and-functions.md | Human / Subgraph / Python / Literal / LoopCounter / LoopTimer 节点、FunctionManager 与 FunctionCatalog | | ✅ |
 | 8 | 服务层：FastAPI 后端与实时通信 | ch08-server-layer.md | FastAPI 路由体系、WebSocket 实时推送、SSE 流式输出、批量执行、会话管理 | | ✅ |
-| 9 | 项目演进史 | ch09-evolution.md | 从 ChatDev 1.0 到 2.0 的演进脉络、关键转折点、架构变迁 | commit 历史分析 | ⏳ |
+| 9 | 项目演进史 | ch09-evolution.md | 从 ChatDev 1.0 到 2.0 的演进脉络、关键转折点、架构变迁 | commit 历史分析 | ✅ |
 | 10 | 端到端追踪：三个典型场景 | ch10-end-to-end.md | 场景一：简单记忆写作流水线 / 场景二：带循环的代码开发流 / 场景三：深度研究多阶段流 | 串联全书 | ⏳ |
 
 ## 章节规划说明
