@@ -9,7 +9,7 @@
 | 2 | 图引擎核心：构建与调度 | ch02-graph-engine.md | GraphManager 构图、拓扑排序、DAG 分层执行策略 | 同类对比：LangGraph / CrewAI 的编排思路差异 | ✅ |
 | 3 | 循环与分支：环检测与动态边 | ch03-cycles-and-edges.md | Tarjan 环检测、CycleManager、超级节点图、动态边 Map/Tree 模式、边条件与 Payload 处理 | | ✅ |
 | 4 | Agent 节点：从 Prompt 到输出 | ch04-agent-node.md | AgentNodeExecutor 执行流、Prompt 构造、Provider 抽象、Tool Loop、重试机制 | prompt 分析（系统提示 / 记忆注入 / 反思提示） | ✅ |
-| 5 | 记忆系统：让 Agent 拥有长期记忆 | ch05-memory-system.md | MemoryBase 接口、SimpleMemory（FAISS 向量检索）、FileMemory、BlackboardMemory、嵌入与混合评分 | 同类对比：AutoGen / LangChain 的记忆机制差异 | ⏳ |
+| 5 | 记忆系统：让 Agent 拥有长期记忆 | ch05-memory-system.md | MemoryBase 接口、SimpleMemory（FAISS 向量检索）、FileMemory、BlackboardMemory、嵌入与混合评分 | 同类对比：AutoGen / LangChain 的记忆机制差异 | ✅ |
 | 6 | 思考系统与技能系统 | ch06-thinking-and-skills.md | ThinkingManager、SelfReflection prompt 分析、AgentSkills 激活机制 | prompt 分析（反思 prompt 模板） | ⏳ |
 | 7 | 其他节点类型与函数体系 | ch07-other-nodes-and-functions.md | Human / Subgraph / Python / Literal / LoopCounter / LoopTimer 节点、FunctionManager 与 FunctionCatalog | | ⏳ |
 | 8 | 服务层：FastAPI 后端与实时通信 | ch08-server-layer.md | FastAPI 路由体系、WebSocket 实时推送、SSE 流式输出、批量执行、会话管理 | | ⏳ |
